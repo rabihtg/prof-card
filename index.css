@@ -46,18 +46,23 @@ main {
 }
 .gray-data {
   color: var(--Dark-gray);
+  margin-left: 5px;
   font-weight: 100;
 }
 .country-info {
   margin-top: 5px;
+  font-size: 15px;
+  line-height: 2;
   color: var(--Dark-gray);
 }
 .profile-info-cont {
   display: flex;
-  margin: 2rem 0;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  border-top: 1px solid hsla(0, 0%, 59%, 0.2);
 }
 .info-item {
-  margin: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
