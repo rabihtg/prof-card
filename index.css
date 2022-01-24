@@ -10,10 +10,10 @@
 body {
   margin: 0;
   font-family: var(--ff-sans);
-  background: url(./images/bg-pattern-top.svg) -40vh -50vh,
-    url(./images/bg-pattern-bottom.svg) 90vh 50vh, var(--Dark-cyan);
-  background-repeat: no-repeat;
-  background-size: 70%;
+  background: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg), var(--Dark-cyan);
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-repeat: no-repeat, no-repeat;
 }
 main {
   margin: 0;
@@ -31,6 +31,7 @@ main {
   width: 350px;
   background: url(./images/bg-pattern-card.svg), hsl(0, 0%, 100%);
   background-repeat: no-repeat;
+  background-size: 100% 38%;
   align-items: center;
   border-radius: 10px;
 }
@@ -74,12 +75,4 @@ main {
   color: var(--Dark-gray);
   font-size: 10px;
   letter-spacing: 2px;
-}
-@media (max-width: 900px) {
-  body {
-    background: url(./images/bg-pattern-top.svg) -40vh -100vh,
-      url(./images/bg-pattern-bottom.svg) 10vh 50vh, var(--Dark-cyan);
-    background-repeat: no-repeat;
-    background-size: 150% 150%;
-  }
 }
